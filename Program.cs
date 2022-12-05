@@ -26,6 +26,22 @@
     solve.part_two();
     sr.Close();
 
+    Console.WriteLine($"\t\tDay Four - part I:");
+    sr = new StreamReader("Day_04_Data.txt");
+    solve = new SolveDayFour(sr);
+    solve.part_one();
+    Console.WriteLine($"\t\tDay Four - part II:");
+    solve.part_two();
+    sr.Close();
+
+    Console.WriteLine($"\t\tDay Five - part I:");
+    sr = new StreamReader("Day_05_Data.txt");
+    solve = new SolveDayFive(sr);
+    solve.part_one();
+    Console.WriteLine($"\t\tDay Five - part II:");
+    solve.part_two();
+    sr.Close();
+
 }
 catch(Exception ex)
 {
